@@ -1,0 +1,19 @@
+<h2> Edit these kites </h2>
+
+<%=  form_for @kite do |f| %>
+
+
+
+Name: <%= f.text_field :name %>
+Roast: <%= f.text_field :color %>
+Origin: <%= f.text_field :origin %>
+Quantity: <%= f.text_field :quantity %>
+
+ <%= f.submit "Edit kite" %>
+
+
+ <% end %>
+
+
+
+<%= link_to "Back to the Kitelist", kitess_path %>
